@@ -80,4 +80,19 @@
 ###更多vim设置请看   http://qinlong.blog.51cto.com/1130504/337730
 
 #设置gitconfig
-	
+	把peter的笔记克隆一份，重新生成 tg-note 文件夹里面有文件“gitconfig”
+    psjicfh@ubuntu:~/tg-note$ vim gitconfig
+	在可视行模式下复制前三行  然后在普通模式下 “:e ~/.gitconfig” 进入自己的
+	gitconfig文件 然后用可视行粘贴 (为下面的后三行)
+		[user]
+			name = psjicfh
+			email = psjicfh@yeah.net
+		[alias]
+			throw = reset --hard HEAD
+			throwh = reset --hard HEAD^	
+	此后修改完文件后想还原就用命令 ：“git throw 或者 git throwh”
+    git throw:修改完文件还未做版本时用
+    git throwh:修改完文件并且已经做了做版本时用
+	注：已经push到远端服务器上的版本 就不要使用这两个git命令了
+	若给不小心执行了 就只能把远端服务器上的版本pull下来然后……
+
