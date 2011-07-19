@@ -80,7 +80,7 @@
 ###更多vim设置请看   http://qinlong.blog.51cto.com/1130504/337730
 
 #设置gitconfig
-	把peter的笔记克隆一份，重新生成 tg-note 文件夹里面有文件“gitconfig”
+	把peter的笔记克隆一份(克隆方式见lesson4笔记)，重新生成 tg-note 文件夹里面有		文件“gitconfig”
     psjicfh@ubuntu:~/tg-note$ vim gitconfig
 	在可视行模式下复制前三行  然后在普通模式下 “:e ~/.gitconfig” 进入自己的
 	gitconfig文件 然后用可视行粘贴 (为下面的后三行)
