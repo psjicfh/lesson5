@@ -96,3 +96,8 @@
 	注：已经push到远端服务器上的版本 就不要使用这两个git命令了
 	若给不小心执行了 就只能把远端服务器上的版本pull下来然后……
 
+#git commit -a -m "xxx"的注意
+    如果只修改了一个文件 则可以无 “-a” 且无“git add xxx”
+    若又增加新文件则 格式为：
+    git add xxx
+ 	git commit -a -m "xxx"
