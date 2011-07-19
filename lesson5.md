@@ -1,5 +1,10 @@
 #lesson5笔记
 ##上午
+##上传
+    git config --global user.name "psjicfh"
+    git config --global user.email psjicfh@yeah.net
+    git remote add origin git@github.com:psjicfh/lesson5.git
+    git push -u origin master
 
     ctrl+shift+t:同一页面两个标签
     ctrl+pgup(pgdn): 翻页
