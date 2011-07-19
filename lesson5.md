@@ -37,3 +37,47 @@
 
 ##一次下载多个视屏文件
     wget-r http://media.happypeter.org/happycasts/
+
+
+
+#下午
+#设置vim
+    如：vim a.c 在普通模式下
+	":set number"         设置显示行号
+	":set nonumber"       设置消除行号
+    ……
+	注此时只能设置 文件 a.c 若想一劳永逸则：
+    在用户主目录(即：/home/psjicfh)下面:
+	psjicfh@ubuntu:~$ vim .vimrc
+	进去后在“插入”模式下设置：
+	"set number"         设置显示行号
+    ……
+    "set tabstop=4"      实际的 tab 即为 4 个空格, 而不是缺省的 8 个
+	"set hidden"		 用vim打开一个（或多个）文件后不用保存“w” 亦可bn到下一个						 文件，若不设置则会有警告。
+	例如：
+	psjicfh@ubuntu:~/work/lesson5$ vim a.c b.c
+	在普通模式下“:ls”
+		:ls
+				  1 %a   "a.c"                          第 1 行
+				  2      "b.c"                          第 0 行
+					 1 表示打开的文件序号, 这个序号很有用处.
+                     %a              表示文件代号, % 表示当前编辑的文件,
+                                     # 表示上次编辑的文件
+                     "a.c"   表示文件名.
+                     行 162          表示光标位置.
+
+	此时先进入a.c中在编辑了a.c后，若想直接bn到b.c中就要设置 “hidden”
+
+	若psjicfh@ubuntu:~/work/lesson5$ vim a.c
+    想从a.c跳到b.c中则“:e b.c”
+	若此时想要跳到c.c中而此文件在用户主目录下 则：
+	psjicfh@ubuntu:~/work/lesson5$ vim a.c
+	后要在普通模式下“:e ~/c.c” 就能进入 c.c  然后bn 就可以两个文件间交换编辑
+					  “~”代表用户主目录即：“/home/psjicfh”
+    进入c.c后就可以编辑了（如：利用可视行进行复制粘贴等） 注意 退出的时候要先 w     后 bd 然后回到a.c中
+	注：在两个vim下不能用可视行进行粘贴复制等
+    
+###更多vim设置请看   http://qinlong.blog.51cto.com/1130504/337730
+
+#设置gitconfig
+	
